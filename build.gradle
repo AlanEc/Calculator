@@ -6,15 +6,15 @@ apply plugin: 'checkstyle'
 apply plugin: 'pmd'
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
-	testCompile 'junit:junit:4.12'
+    testCompile 'junit:junit:4.12'
 }
 
 findbugs {
-	ignoreFailures = true
+    ignoreFailures = true
 }
 
 checkstyle {
@@ -23,5 +23,21 @@ checkstyle {
 }
 
 pmd {
-	ignoreFailures = true
+ 	ignoreFailures = true
+ 	pmdTest.enabled = false
+ 	ruleSets = [
+ 	'java-basic',
+ 	'java-braces',
+ 	'java-clone',
+ 	'java-codesize',
+ 	'java-comments',
+ 	'java-controversial',
+ 	'java-coupling'
+ 	]
+ }
+ 
+
+javadoc {
+  source = sourceSets.main.allJava
+  classpath = configurations.compile
 }
