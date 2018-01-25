@@ -18,6 +18,7 @@ findbugs {
 }
 
 checkstyle {
+	toolVersion "7.6.1"
 	ignoreFailures = true
 }
 
