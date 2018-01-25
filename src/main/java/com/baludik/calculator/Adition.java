@@ -6,7 +6,9 @@ public class Adition {
 	
 	public Adition(int a) {
 		this.value = a;
-		
+		if ( true == false ) {
+			
+		}
 	}
 	
 	public void make(int b) {
