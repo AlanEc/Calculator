@@ -2,6 +2,8 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'findbugs'
+apply plugin: 'checkstyle'
+apply plugin: 'pmd'
 
 repositories {
 	mavenCentral()
@@ -10,3 +12,4 @@ repositories {
 dependencies {
 	compile 'junit:junit:4.12'
 }
+
