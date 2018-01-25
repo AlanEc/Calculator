@@ -51,7 +51,11 @@ public class AditionTest {
 	 */
 	@Test
 	public void testAdition() {
-		fail("Not yet implemented");
+		Adition add = new Adition(1);
+		Assert.assertEquals(1,  add.value);
+		
+		Assert.assertNotNull(add);
+		
 	}
 
 	/**
@@ -71,7 +75,9 @@ public class AditionTest {
 	 */
 	@Test
 	public void testGetValue() {
-		fail("Not yet implemented");
+		Adition add = new Adition(1);		
+		Assert.assertNotNull(add);
+		Assert.assertEquals(1, add.value);
 	}
 
 }
