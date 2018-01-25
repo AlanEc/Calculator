@@ -13,3 +13,14 @@ dependencies {
 	compile 'junit:junit:4.12'
 }
 
+findbugs {
+	ignoreFailures = true
+}
+
+checkstyle {
+	ignoreFailures = true
+}
+
+pmd {
+	ignoreFailures = true
+}
